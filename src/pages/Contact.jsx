@@ -9,9 +9,6 @@ function Contact() {
         <main>
           Main Content
         </main>
-        <footer>
-          footer
-        </footer>
         
       </div>
     );

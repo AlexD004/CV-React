@@ -23,7 +23,7 @@ export default function CardsList( { dataCards, textAlign, gutterBetweenCards, c
                                         </Card.Text>
                                         { !!(dataCard.buttonLink) && <Card.Link href={dataCard.buttonLink}><Button className={buttonStyle}>{buttonText}</Button></Card.Link>}
                                     </Card.Body>
-                                    {!!(dataCard.infoPlus) && <p className='m-0 py-2 bg-gray-body border-top border-secondary rounded-bottom '>{dataCard.infoPlus}</p>}
+                                    {!!(dataCard.infoPlus) && <p className='m-0 py-2 bg-darker border-top border-secondary rounded-bottom '>{dataCard.infoPlus}</p>}
                                 </Card> 
                             </div>
                             
