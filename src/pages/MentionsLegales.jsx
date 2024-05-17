@@ -1,9 +1,9 @@
-function Blog() {
+function MentionsLegales() {
     return (
       <div className="App">
         <header className="App-header">
           <h1>
-          Blog
+          Mentions légales
           </h1>
         </header>
         <main>
@@ -14,4 +14,4 @@ function Blog() {
     );
   }
   
-  export default Blog;
+  export default MentionsLegales;

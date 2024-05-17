@@ -5,7 +5,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 function Accueil() {
 
     // STATES
-    const [progressBars, setprogressBars] = useState([
+    const [progressBars] = useState([
       { id: 1, nom: "html5", grade: "90", color: "danger" },
       { id: 2, nom: "css3", grade: "80", color: "info" },
       { id: 3, nom: "javascript", grade: "70", color: "warning" },
@@ -18,7 +18,6 @@ function Accueil() {
     return (
       <div className="Accueil">
         <header className="Accueil-header">
-
           <div className='headerContent'>
             <h1> Bonjour, je suis John Doe </h1>
             <h2 className='mt-4 mb-2'> Développeur web full stack </h2>

@@ -37,7 +37,7 @@ function Services() {
 
     // RENDER
     return (
-      <div className="App">
+      <div className="Services">
         <header className="Header text-center">
           <div className='imageHeader fluid'></div>
           <div className='container d-flex flex-column justify-content-center align-items-center'>
@@ -48,18 +48,16 @@ function Services() {
             <div className='underTitle bg-primary rounded my-3 mb-5'>&nbsp;</div>
           </div>
         </header>
-        <main className='fluid d-flex justify-content-center'>
-
-          <CardsList 
-            dataCards={ serviceCards } 
-            textAlign= "text-center" 
-            gutterBetweenCards= "g-2" 
-            col= "col-sm-12 col-md-4" 
-            cardStyle= "cardShadow" 
-            buttonStyle= "bg-primary my-3"
-            buttonText= "Lire la suite"
-          />
-
+        <main className='fluid d-flex justify-content-center mb-5'>
+            <CardsList 
+              dataCards={ serviceCards } 
+              textAlign= "text-center" 
+              gutterBetweenCards= "g-2" 
+              col= "col-sm-12 col-md-4" 
+              cardStyle= "cardShadow" 
+              buttonStyle= "bg-primary my-3"
+              buttonText= "Lire la suite"
+            />
         </main>
         
       </div>

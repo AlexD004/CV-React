@@ -8,6 +8,7 @@
   --gray-dark : #1e1e1e;
   --black: #000;
   --bg: #eee;
+  --bg-darker: #ddd;
 }
 .bg-gray {
   background-color: var(--gray);
@@ -20,6 +21,9 @@ strong{
 }
 .bg-gray-body{
   background-color:var(--bg);
+}
+.bg-darker{
+  background-color: var(--bg-darker);
 }
 body{
   background-color: var(--bg) !important;
@@ -54,6 +58,7 @@ ol, ul{
 li {
   list-style: none;
 }
+a { text-decoration: none !important;}
 .Header{
   min-height: 20vh;
   display: flex;
@@ -84,6 +89,8 @@ li {
 .nav-link.active {
   opacity: 1;
 }
+/* Footer */
+.Footer .nav-link {opacity: 1;}
 /* ACCUEIL */
 .Accueil-header {
   background-color: #282c34;
