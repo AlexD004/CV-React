@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+
+/* Adding Colors Styles */
+:root {
+  --gray : #444;
+  --gray-dark : #1e1e1e;
+  --black: #000;
+  --bg: #eee;
+}
+.bg-gray {
+  background-color: var(--gray);
+}
+.bg-gray-dark {
+  background-color: var(--gray-dark);
+}
+strong{
+  color:var(--black);
+}
+.bg-gray-body{
+  background-color:var(--bg);
+}
+body{
+  background-color: var(--bg) !important;
+  font-size: .9rem !important;
+}
+/* Define font style */
+h1, h2, h3, h4, h5, strong{
+  font-weight: 600;
+}
+h1{color:var(--gray-dark) !important;}
+h2{
+  font-size: 1em !important;
+  color:var(--gray-dark) !important;
+}
+h3{
+  font-size: 2em !important;
+}
+h4{
+  font-size: 1.5em !important;
+}
+/* General Styles */
+.App {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  color:var(--gray);
+  background-color: var(--bg);
+  text-align: left;
+}
+ol, ul{
+  padding: 0 !important;
+}
+li {
+  list-style: none;
+}
+.Header{
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.Header .imageHeader{
+  background-color: red;
+  min-height: 10vh;
+  max-height: 100px;
+  width: 100%;
+  background-image : url('../public/web.jpg');
+  background-size : cover ;
+}
+.underTitle {
+  display: block;
+  width: 100px;
+  height: 4px;
+}
+
+/* Nav Bar */
+.navbar-collapse{ flex-grow: inherit !important;}
+.nav-link {opacity: .6;}
+.nav-link:hover{opacity: .8;}
+.navbar-brand .nav-link,
+.nav-link.active {
+  opacity: 1;
+}
+/* ACCUEIL */
+.Accueil-header {
+  background-color: #282c34;
+  background-image : url('../public/developpeur-web.jpg');
+  background-size : cover ;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.Accueil-header::before{
+  content:"";
+  display: block;
+  position: absolute;
+  width: 100%;
+  min-height: 50vh;
+  background-color: rgba(0,0,0,.3);
+}
+.Accueil-header h1{
+  color:white !important;
+  font-size: 2.5rem;;
+}
+.Accueil-header h2{
+  color:white !important;
+}
+.headerContent{
+  position: relative;
+  z-index: 100;
+  text-align: center;
+}
+section#aPropos{
+  background: #fff;
+  box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.2);
+}
+/* Services */
+.card.cardShadow{
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  max-width: 90vw;
+}
+.card:hover p.iconColor {
+  color: #cde1f8 !important;
+}
