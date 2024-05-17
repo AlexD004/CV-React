@@ -7,11 +7,7 @@ function Realisations() {
           </h1>
         </header>
         <main>
-          Main Content
         </main>
-        <footer>
-          footer
-        </footer>
         
       </div>
     );

@@ -122,9 +122,11 @@ section#aPropos{
   box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.2);
 }
 /* Services */
-.card.cardShadow{
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+.card{
   max-width: 90vw;
+}
+.cardShadow{
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
 }
 .card:hover p.iconColor {
   color: #cde1f8 !important;
