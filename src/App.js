@@ -134,7 +134,7 @@ function App() {
             <Route path="/mentions-legales" element={ <MentionsLegales/> }></Route>
           </Routes>
       </div>
-      <Footer />
+      <Footer dataPortfolio={ realisationsCards } dataBlog={ blogCards } />
     </div>
   );
 }
