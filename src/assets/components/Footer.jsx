@@ -9,10 +9,10 @@ import {NavLink} from 'react-router-dom';
 
 function Footer() {
     return (
-      <div className="Footer fluid d-flex flex-column justify-content-center align-items-center bg-darker pt-3">
-        <div className="row container g-4">
-            <div className="col-sm-12 col-md-6 col-lg-3">
-                <p className='mt-1'><strong>John Doe</strong></p>
+      <div className="Footer fluid d-flex flex-column justify-content-center align-items-center bg-darker">
+        <div className="row container g-4 my-5">
+            <div className="col-sm-12 col-md-6 col-lg-3 m-0">
+                <p className='mt-1 mb-1'><strong>John Doe</strong></p>
                 <p className='m-0'>40 Rue Laure Diebold</p>
                 <p className='m-0'>69009 Lyon, France</p>
                 <p className='m-0'>Téléphone: <a href='tel:0620304050' className='text-dark'>06 20 30 40 50</a></p>
@@ -22,8 +22,8 @@ function Footer() {
                 <div className='d-inline-block mx-1'><FontAwesomeIcon className='iconSocial' icon={faLinkedin} size="xl"/></div>
                 </p>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-3">
-                <p className='mt-1'><strong>Liens utiles</strong></p>
+            <div className="col-sm-12 col-md-6 col-lg-3 m-0">
+                <p className='mt-1 mb-1'><strong>Liens utiles</strong></p>
                 <Nav className='text-left d-inline m-0 p-0'>
                   <NavLink className="nav-link text-dark m-0 p-0" to="/"> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/> Accueil </NavLink>
                   <NavLink className="nav-link text-dark m-0 p-0" to="/services"> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/>  Services </NavLink>
@@ -33,11 +33,11 @@ function Footer() {
                   <NavLink className="nav-link text-dark m-0 p-0" to="/mentions-legales"> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/>  Mentions légales </NavLink>
               </Nav>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-3">
-                <p><strong>Mes dernières réalisatons</strong></p>
+            <div className="col-sm-12 col-md-6 col-lg-3 m-0">
+                <p className='mt-1 mb-1'><strong>Mes dernières réalisatons</strong></p>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-3">
-                <p><strong>Mes dernièrs articles</strong></p>
+            <div className="col-sm-12 col-md-6 col-lg-3 m-0">
+                <p className='mt-1 mb-1'><strong>Mes dernièrs articles</strong></p>
             </div>
         </div>
         <div className='container-fluid bg-dark text-light text-center py-2'>
