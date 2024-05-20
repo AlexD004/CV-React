@@ -8,7 +8,7 @@
   --gray-dark : #1e1e1e;
   --black: #000;
   --bg: #eee;
-  --bg-darker: #ddd;
+  --bg-darker: #e1e1e1;
 }
 .bg-gray {
   background-color: var(--gray);
@@ -68,8 +68,8 @@ a { text-decoration: none !important;}
   font-size: calc(10px + 2vmin);
 }
 .Header .imageHeader{
-  background-color: red;
-  min-height: 10vh;
+  background-color: var(--bg);
+  min-height: 20vh;
   max-height: 100px;
   width: 100%;
   background-image : url('../public/web.jpg');
@@ -128,7 +128,7 @@ section#aPropos{
   background: #fff;
   box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.2);
 }
-/* Services */
+/* Cards */
 .card{
   max-width: 90vw;
 }
