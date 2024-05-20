@@ -11,7 +11,7 @@ function Footer({ dataPortfolio, dataBlog }) {
     return (
       <div className="Footer fluid d-flex flex-column justify-content-center align-items-center bg-darker">
         <div className="row container g-4 my-5">
-            <div className="col-sm-12 col-md-6 col-lg-3 m-0">
+            <div className="col-sm-12 col-md-6 col-lg-3 my-md-1 m-lg-0">
                 <p className='mt-1 mb-1'><strong>John Doe</strong></p>
                 <p className='m-0'>40 Rue Laure Diebold</p>
                 <p className='m-0'>69009 Lyon, France</p>
@@ -22,7 +22,7 @@ function Footer({ dataPortfolio, dataBlog }) {
                 <div className='d-inline-block mx-1'><FontAwesomeIcon className='iconSocial' icon={faLinkedin} size="xl"/></div>
                 </p>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-3 m-0">
+            <div className="col-sm-12 col-md-6 col-lg-3 my-md-1 m-lg-0">
                 <p className='mt-1 mb-1'><strong>Liens utiles</strong></p>
                 <Nav className='text-left d-inline m-0 p-0'>
                   <NavLink className="nav-link text-dark m-0 p-0" to="/"> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/> Accueil </NavLink>
@@ -33,7 +33,7 @@ function Footer({ dataPortfolio, dataBlog }) {
                   <NavLink className="nav-link text-dark m-0 p-0" to="/mentions-legales"> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/>  Mentions légales </NavLink>
               </Nav>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-3 m-0">
+            <div className="col-sm-12 col-md-6 col-lg-3 my-md-1 m-lg-0">
                 <p className='mt-1 mb-1'><strong>Mes dernières réalisatons</strong></p>
                 <Nav className='text-left d-inline m-0 p-0'>
                 {dataPortfolio.slice(0, 3).map(
@@ -45,7 +45,7 @@ function Footer({ dataPortfolio, dataBlog }) {
                 )}
                 </Nav>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-3 m-0">
+            <div className="col-sm-12 col-md-6 col-lg-3 my-md-1 m-lg-0">
                 <p className='mt-1 mb-1'><strong>Mes dernièrs articles</strong></p>
                 <Nav className='text-left d-inline m-0 p-0'>
                 {dataBlog.slice(0, 3).map(

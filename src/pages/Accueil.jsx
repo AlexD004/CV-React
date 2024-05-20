@@ -26,7 +26,7 @@ function Accueil() {
 
         </header>
         <main>
-          <section id="aPropos" className='container-fluid-sm container-md my-5 py-5 rounded'>
+          <section id="aPropos" className='container-fluid-sm container-md d-flex justify-content-center my-5 py-5 rounded'>
             <div className='container row'>
                 <div id="presentation" className='col-sm-12 col-md-6'>
                   <h3 className='border-bottom border-primary border-2 pb-2 mb-4'>À propos</h3>
