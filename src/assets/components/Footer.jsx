@@ -4,10 +4,10 @@ import { faSquareTwitter }  from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin }  from '@fortawesome/free-brands-svg-icons'
 import { faChevronRight }  from '@fortawesome/free-solid-svg-icons'
 import Nav from 'react-bootstrap/Nav';
-import {NavLink} from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 
-function Footer() {
+function Footer({ dataPortfolio, dataBlog }) {
     return (
       <div className="Footer fluid d-flex flex-column justify-content-center align-items-center bg-darker">
         <div className="row container g-4 my-5">
@@ -35,9 +35,27 @@ function Footer() {
             </div>
             <div className="col-sm-12 col-md-6 col-lg-3 m-0">
                 <p className='mt-1 mb-1'><strong>Mes dernières réalisatons</strong></p>
+                <Nav className='text-left d-inline m-0 p-0'>
+                {dataPortfolio.map(
+                    (dataPortfolio) => {
+                        return (
+                          <Link className="nav-link text-dark m-0 p-0" to={dataPortfolio.buttonLink}> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/> {dataPortfolio.title} </Link>
+                        )
+                    }
+                )}
+                </Nav>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-3 m-0">
                 <p className='mt-1 mb-1'><strong>Mes dernièrs articles</strong></p>
+                <Nav className='text-left d-inline m-0 p-0'>
+                {dataBlog.slice(0, 3).map(
+                    (dataBlog) => {
+                        return (
+                          <Link className="nav-link text-dark m-0 p-0" to={dataBlog.buttonLink}> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/> {dataBlog.title} </Link> 
+                        )
+                    }
+                )}
+                </Nav>
             </div>
         </div>
         <div className='container-fluid bg-dark text-light text-center py-2'>
