@@ -36,7 +36,7 @@ function Footer({ dataPortfolio, dataBlog }) {
             <div className="col-sm-12 col-md-6 col-lg-3 m-0">
                 <p className='mt-1 mb-1'><strong>Mes dernières réalisatons</strong></p>
                 <Nav className='text-left d-inline m-0 p-0'>
-                {dataPortfolio.map(
+                {dataPortfolio.slice(0, 3).map(
                     (dataPortfolio) => {
                         return (
                           <Link className="nav-link text-dark m-0 p-0" to={dataPortfolio.buttonLink}> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/> {dataPortfolio.title} </Link>
