@@ -1,8 +1,6 @@
 import CardsList from '../assets/components/CardsList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDisplay }  from '@fortawesome/free-solid-svg-icons'
-import { faFileCode }  from '@fortawesome/free-solid-svg-icons'
-import { faMagnifyingGlassDollar }  from '@fortawesome/free-solid-svg-icons'
+import { faDisplay, faFileCode, faMagnifyingGlassDollar }  from '@fortawesome/free-solid-svg-icons'
 
 function Services() {
 

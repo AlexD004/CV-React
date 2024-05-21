@@ -1,9 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot }  from '@fortawesome/free-solid-svg-icons'
-import { faMobileScreenButton }  from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope }  from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faMobileScreenButton, faEnvelope, faGlobe }  from '@fortawesome/free-solid-svg-icons'
 
 function MentionsLegales() {
 
@@ -24,22 +22,26 @@ function MentionsLegales() {
               <Accordion.Item eventKey="0">
                 <Accordion.Header>Éditeur du site</Accordion.Header>
                 <Accordion.Body>
-                  <h3 >John Doe</h3>
+                  <h3>John Doe</h3>
                   <p className='m-0'><FontAwesomeIcon icon={faLocationDot} size="sm"/> 40 Rue Laure Diebold,<br></br>69009 Lyon France</p>
                   <p className='m-0'><FontAwesomeIcon icon={faMobileScreenButton} size="sm"/> <a href="tel:0620304050">06 20 30 40 50</a></p>
                   <p className='m-0'><FontAwesomeIcon icon={faEnvelope} size="sm"/> <a href="mailto:john.doe@gmail.com">john.doe@gmail.com</a></p>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
-                <Accordion.Header>Accordion Item #2</Accordion.Header>
+                <Accordion.Header>Hébergeur</Accordion.Header>
                 <Accordion.Body>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum.
+                  <h3>O2 Switch</h3>
+                  <p className='m-0'>222-224 Boulevard Gustave Flaubert<br></br>63000 Clermont-Ferrand – France</p>
+                  <p className='m-0 mt-3'><FontAwesomeIcon icon={faGlobe} size="sm"/> <a href="https://www.o2switch.fr/">www.o2switch.fr</a></p>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="2">
+                <Accordion.Header>Hébergeur</Accordion.Header>
+                <Accordion.Body>
+                  <h3>Crédits</h3>
+                  <p className='m-0'>Site développé par Alexandre Dupré, étudiant du CEF.</p>
+                  <p className='m-0'>Les images libres de droit sont issues du site <a href="https://pixabay.com/fr/">Pixabay</a></p>
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>

@@ -1,7 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub }  from '@fortawesome/free-brands-svg-icons'
-import { faSquareTwitter }  from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin }  from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faSquareTwitter, faLinkedin }  from '@fortawesome/free-brands-svg-icons'
 import { faChevronRight }  from '@fortawesome/free-solid-svg-icons'
 import Nav from 'react-bootstrap/Nav';
 import { NavLink, Link } from 'react-router-dom';
