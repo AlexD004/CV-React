@@ -125,14 +125,14 @@ function App() {
           </Navbar.Collapse>
           </Container>
         </Navbar>
-          <Routes>
-            <Route path="/" element={ <Accueil/> }></Route>
-            <Route path="/services" element={ <Services/> }></Route>
-            <Route path="/realisations" element={ <Realisations dataPortfolio={ realisationsCards }/> }></Route>
-            <Route path="/blog" element={ <Blog dataBlog={ blogCards }/> }></Route>
-            <Route path="/contact" element={ <Contact/> }></Route>
-            <Route path="/mentions-legales" element={ <MentionsLegales/> }></Route>
-          </Routes>
+        <Routes>
+          <Route path="/" element={ <Accueil/> }></Route>
+          <Route path="/services" element={ <Services/> }></Route>
+          <Route path="/realisations" element={ <Realisations dataPortfolio={ realisationsCards }/> }></Route>
+          <Route path="/blog" element={ <Blog dataBlog={ blogCards }/> }></Route>
+          <Route path="/contact" element={ <Contact/> }></Route>
+          <Route path="/mentions-legales" element={ <MentionsLegales/> }></Route>
+        </Routes>
       </div>
       <Footer dataPortfolio={ realisationsCards } dataBlog={ blogCards } />
     </div>
