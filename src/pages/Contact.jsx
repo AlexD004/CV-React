@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot }  from '@fortawesome/free-solid-svg-icons'
-import { faMobileScreenButton }  from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faMobileScreenButton }  from '@fortawesome/free-solid-svg-icons'
 
 import ContactForm from '../assets/components/ContactForm';
 
