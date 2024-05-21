@@ -16,11 +16,11 @@ function Footer({ dataPortfolio, dataBlog }) {
                 <p className='m-0'>40 Rue Laure Diebold</p>
                 <p className='m-0'>69009 Lyon, France</p>
                 <p className='m-0'>Téléphone: <a href='tel:0620304050' className='text-dark'>06 20 30 40 50</a></p>
-                <p className='mt-2 mb-0'>
+                <div className='mt-2 mb-0'>
                 <div className='d-inline-block mx-1'><FontAwesomeIcon className='iconSocial' icon={faGithub} size="xl"/></div>
                 <div className='d-inline-block mx-1'><FontAwesomeIcon className='iconSocial' icon={faSquareTwitter} size="xl"/></div>
                 <div className='d-inline-block mx-1'><FontAwesomeIcon className='iconSocial' icon={faLinkedin} size="xl"/></div>
-                </p>
+                </div>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-3 my-md-1 m-lg-0">
                 <p className='mt-1 mb-1'><strong>Liens utiles</strong></p>
@@ -39,7 +39,7 @@ function Footer({ dataPortfolio, dataBlog }) {
                 {dataPortfolio.slice(0, 3).map(
                     (dataPortfolio) => {
                         return (
-                          <Link className="nav-link text-dark m-0 p-0" to={dataPortfolio.buttonLink}> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/> {dataPortfolio.title} </Link>
+                          <Link key={dataPortfolio.id} className="nav-link text-dark m-0 p-0" to={dataPortfolio.buttonLink}> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/> {dataPortfolio.title} </Link>
                         )
                     }
                 )}
@@ -51,7 +51,7 @@ function Footer({ dataPortfolio, dataBlog }) {
                 {dataBlog.slice(0, 3).map(
                     (dataBlog) => {
                         return (
-                          <Link className="nav-link text-dark m-0 p-0" to={dataBlog.buttonLink}> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/> {dataBlog.title} </Link> 
+                          <Link key={dataBlog.id} className="nav-link text-dark m-0 p-0" to={dataBlog.buttonLink}> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/> {dataBlog.title} </Link> 
                         )
                     }
                 )}

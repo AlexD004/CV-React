@@ -157,3 +157,8 @@ section#aPropos{
   width: 100%;
   min-height: 400px;
 }
+/* Mentions Legales */
+button[aria-expanded="true"]{
+  color: #0d6efd !important;
+  font-weight: 600;
+}
