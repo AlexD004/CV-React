@@ -13,7 +13,7 @@ export default function CardsList( { dataCards, textAlign, gutterBetweenCards, c
                         return (
 
                             <div className={ 'card-group d-flex justify-content-center ' + col }>
-                                <Card key={dataCard.id} className={ 'border border-secondary ' + cardStyle + ' ' + ( !!(dataCard.imageURL)===false && 'pt-5' ) + ' ' + ( !!(dataCard.infoPlus)===false && 'pb-5' ) }>
+                                <Card key={dataCard.id} className={ cardStyle + ' ' + ( !!(dataCard.imageURL)===false && 'pt-5' ) + ' ' + ( !!(dataCard.infoPlus)===false && 'pb-5' ) }>
                                     { !!(dataCard.imageURL) && <Card.Img variant='top' src={process.env.PUBLIC_URL + dataCard.imageURL } alt={dataCard.alt} />}
                                     <Card.Body>
                                         { !!(dataCard.icon) && <p className='iconCard iconColor text-primary'>{dataCard.icon}</p>}

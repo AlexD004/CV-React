@@ -20,7 +20,7 @@ function Realisations({ dataPortfolio }) {
               textAlign= "text-center" 
               gutterBetweenCards= "g-2" 
               col= "col-sm-12 col-md-6 col-lg-4" 
-              cardStyle= "" 
+              cardStyle= "border border-secondary " 
               buttonStyle= "bg-white border border-primary text-primary my-3"
               buttonText= "Voir"
             />

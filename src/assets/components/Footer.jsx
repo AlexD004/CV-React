@@ -9,7 +9,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 function Footer({ dataPortfolio, dataBlog }) {
     return (
-      <div className="Footer fluid d-flex flex-column justify-content-center align-items-center bg-darker">
+      <div className="Footer fluid d-flex flex-column justify-content-center align-items-center bg-darker position-relative">
         <div className="row container g-4 my-5">
             <div className="col-sm-12 col-md-6 col-lg-3 my-md-1 m-lg-0">
                 <p className='mt-1 mb-1'><strong>John Doe</strong></p>

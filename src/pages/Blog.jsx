@@ -20,7 +20,7 @@ function Blog({ dataBlog }) {
               textAlign= "text-center" 
               gutterBetweenCards= "g-2" 
               col= "col-sm-12 col-md-6 col-lg-4" 
-              cardStyle= "cardShadow" 
+              cardStyle= "border border-secondary " 
               buttonStyle= "bg-primary my-3"
               buttonText= "Lire la suite"
             />
