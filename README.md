@@ -54,8 +54,8 @@ You can edit the CardsList component if you want. You can find it here :
 
 📂 CV-React
 --> 📂src
-----> 📂components
-------> 📄CardsList.jsx
+--> 📂components
+--> 📄CardsList.jsx
         
 1. In the main folder 'CV-React', search the folder 'src'
 2. In the folder 'src', search the folder 'components'
@@ -67,10 +67,10 @@ You can call this components in all pages you want :
 
 ```
 
-// On top of your page, adjust the path if necessary !
+# On top of your page, adjust the path if necessary !
 import CardsList from '../assets/components/CardsList'
 
-// In the render (JSX)
+# In the render (JSX)
 <CardsList 
   dataCards={ [stateWithDatas] } 
   textAlign= "text-center" 
@@ -88,7 +88,7 @@ Props in CardsList are injected in elements className to change styles.
 CardsList use Bootstrap, so use it you too !
 
 ```
-// Example of datas, you can rename it, just adjust the prop "dataCards" when you call the component
+# Example of datas, you can rename it, just adjust the prop "dataCards" when you call the component
 const stateWithDatas = [
       { 
         id: 1,
