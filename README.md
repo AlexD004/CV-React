@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# CV with React JS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+There is a CV, designed and developped for my formation to become a fullstack developper.
+It use React.JS to structure and edit the content.
 
-## Available Scripts
+## :magic_wand: Features
 
-In the project directory, you can run:
+- ✨ CSS with Bootstrap
+- ✨ Icons with FontAwesome
+- ✨ Responsive
+- ✨ Valid HTML5 & CSS3
+- ✨ Contact form with required fields control (but no configuration to send mail)
+- ✨ A component to display cards
 
-### `npm start`
+## 🏗️ Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📄 Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You'll need [Git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/en) (which comes with NPM) installed on your computer.
 
-### `npm test`
+```
+node@v16.4.2 or higher
+npm@7.18.1 or higher
+git@2.30.1 or higher
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔨 Installation
 
-### `npm run build`
+From your command line, first clone Portfolio CEF :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+# Clone repository
+$ git clone https://github.com/AlexD004/CV-React
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Move into repository
+$ git cd cv-react
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+After that, you can install the dependencies either using NPM.
 
-### `npm run eject`
+```
+# Install dependencies
+$ npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Run the project in Dev Mode to see the result
+$ npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎚️ Custom set-up
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 📋 How to use CardsList Component
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You can edit the CardsList component if you want. You can find it here :
 
-## Learn More
+📂 CV-React
+--> 📂src
+----> 📂components
+------> 📄CardsList.jsx
+        
+1. In the main folder 'CV-React', search the folder 'src'
+2. In the folder 'src', search the folder 'components'
+3. In the folder 'components', search the file 'CardsList.jsx'
+4. Open it !
+5. Adjust like you need
+   
+You can call this components in all pages you want :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+// On top of your page, adjust the path if necessary !
+import CardsList from '../assets/components/CardsList'
 
-### Code Splitting
+// In the render (JSX)
+<CardsList 
+  dataCards={ [stateWithDatas] } 
+  textAlign= "text-center" 
+  gutterBetweenCards= "g-2" 
+  col= "col-sm-12 col-md-4" 
+  cardStyle= "cardShadow" 
+  buttonStyle= "bg-primary my-3"
+  buttonText= "Lire la suite"
+/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
 
-### Analyzing the Bundle Size
+You can change all informations.
+Props in CardsList are injected in elements className to change styles.
+CardsList use Bootstrap, so use it you too !
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+// Example of datas, you can rename it, just adjust the prop "dataCards" when you call the component
+const stateWithDatas = [
+      { 
+        id: 1,
+        icon: <FontAwesomeIcon icon={[iconeCode]} size="3x"/>,
+        imageURL: "path/to/image.jpg",
+        title: "String",
+        content: "string,
+        buttonLink: "path/to/page.html",
+        infoPlus: "string"
+      }
+    ];
+```
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can add any objects needed.
+Each objet will be deplayed as a card.
