@@ -72,7 +72,7 @@ a { text-decoration: none !important;}
   min-height: 20vh;
   max-height: 100px;
   width: 100%;
-  background-image : url('../public/web.jpg');
+  background-image : url('../public/images/web.jpg');
   background-size : cover ;
 }
 .underTitle {
@@ -91,10 +91,25 @@ a { text-decoration: none !important;}
 }
 /* Footer */
 .Footer .nav-link {opacity: 1;}
+#linkToTop{
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+}
+#linkToTop:hover {
+  background-color: #298eff !important;
+  cursor: pointer;
+}
+#linkToTop.active {
+  opacity: 1;
+}
 /* ACCUEIL */
 .Accueil-header {
   background-color: #282c34;
-  background-image : url('../public/developpeur-web.jpg');
+  background-image : url('../public/images/developpeur-web.jpg');
   background-size : cover ;
   min-height: 50vh;
   display: flex;
@@ -141,7 +156,7 @@ section#aPropos{
 /* Contact */
 .Contact {
   background-color: rgba(0,105,255,.5);
-  background-image : url('../public/clavier.jpg');
+  background-image : url('../public/images/clavier.jpg');
   background-size : cover ;
   height: 100%;
 }
