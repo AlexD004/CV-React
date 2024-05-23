@@ -20,7 +20,7 @@ function App() {
   const realisationsCards = [
     { 
       id: 1,
-      imageURL: "/fresh-food.jpg",
+      imageURL: "/images/fresh-food.jpg",
       alt: "Panier de légumes frais",
       title: "Fresh Food",
       content: <>Réalisation d'un site avec commande en ligne.</>,
@@ -29,7 +29,7 @@ function App() {
     },
     { 
       id: 2,
-      imageURL: "/restaurant-akira.jpg",
+      imageURL: "/images/restaurant-akira.jpg",
       alt: "Sushis et Makis",
       title: "Restaurant Akira",
       content: <>Réalisation d'un site vitrine.</>,
@@ -38,7 +38,7 @@ function App() {
     },
     { 
       id: 3,
-      imageURL: "/espace-bien-etre.jpg",
+      imageURL: "/images/espace-bien-etre.jpg",
       alt: "Serviette et Huiles essentielles",
       title:"Espace bien-être",
       content: <>Réalisation d'un site vitrine pour un praticien de bien-être.</>,
@@ -51,7 +51,7 @@ function App() {
   const blogCards = [
     { 
       id: 6,
-      imageURL: "/coder.jpg",
+      imageURL: "/images/coder.jpg",
       alt: "Code HTML sur un écran",
       title: "Coder son site en HTML/CSS",
       content: <>Some quick example text to build on the card title and make up the bulk of the card's content.</>,
@@ -60,7 +60,7 @@ function App() {
     },
     { 
       id: 5,
-      imageURL: "/e-commerce.png",
+      imageURL: "/images/e-commerce.png",
       alt: "Wireframe d'un site e-commerce sur un ordinateur illustré",
       title: "Vendre ses produits sur le web",
       content: <>Some quick example text to build on the card title and make up the bulk of the card's content.</>,
@@ -69,7 +69,7 @@ function App() {
     },
     { 
       id: 4,
-      imageURL: "/google.png",
+      imageURL: "/images/google.png",
       alt: "Illustration d'une page Google sur un ordinateur",
       title:"Se positionner sur Google",
       content: <>Some quick example text to build on the card title and make up the bulk of the card's content.</>,
@@ -78,7 +78,7 @@ function App() {
     },
     { 
       id: 3,
-      imageURL: "/responsive.png",
+      imageURL: "/images/responsive.png",
       alt: "Illustration d'un zoning sur quatre tailles d'écran",
       title:"Coder en responsive design",
       content: <>Some quick example text to build on the card title and make up the bulk of the card's content.</>,
@@ -87,7 +87,7 @@ function App() {
     },
     { 
       id: 2,
-      imageURL: "/seo.jpg",
+      imageURL: "/images/seo.jpg",
       alt: "Lettres S E O répétées dans une perspective",
       title:"Techniques de référencement",
       content: <>Some quick example text to build on the card title and make up the bulk of the card's content.</>,
@@ -96,7 +96,7 @@ function App() {
     },
     { 
       id: 1,
-      imageURL: "/apprendre-code.png",
+      imageURL: "/images/apprendre-code.png",
       alt: "",
       title:"Illustration de deux écrans, l'un avec du code et l'autre avec un wireframe",
       content: <>Some quick example text to build on the card title and make up the bulk of the card's content.</>,

@@ -1,11 +1,21 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faSquareTwitter, faLinkedin }  from '@fortawesome/free-brands-svg-icons'
-import { faChevronRight }  from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight, faArrowUp }  from '@fortawesome/free-solid-svg-icons'
 import Nav from 'react-bootstrap/Nav';
 import { NavLink, Link } from 'react-router-dom';
 
 
 function Footer({ dataPortfolio, dataBlog }) {
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+       document.getElementById('linkToTop').classList.add("active");
+      } else {
+       document.getElementById('linkToTop').classList.remove("active"); 
+      }
+    } );
+    
+
     return (
       <div className="Footer fluid d-flex flex-column justify-content-center align-items-center bg-darker position-relative">
         <div className="row container g-4 my-5">
@@ -15,9 +25,9 @@ function Footer({ dataPortfolio, dataBlog }) {
                 <p className='m-0'>69009 Lyon, France</p>
                 <p className='m-0'>Téléphone: <a href='tel:0620304050' className='text-dark'>06 20 30 40 50</a></p>
                 <div className='mt-2 mb-0'>
-                <div className='d-inline-block mx-1'><FontAwesomeIcon className='iconSocial' icon={faGithub} size="xl"/></div>
-                <div className='d-inline-block mx-1'><FontAwesomeIcon className='iconSocial' icon={faSquareTwitter} size="xl"/></div>
-                <div className='d-inline-block mx-1'><FontAwesomeIcon className='iconSocial' icon={faLinkedin} size="xl"/></div>
+                <div className='d-inline-block mx-1'><a href="https://github.com/github-john-doe" target="_blank" rel="nofollow" className='text-dark'><FontAwesomeIcon className='iconSocial' icon={faGithub} size="xl"/></a></div>
+                <div className='d-inline-block mx-1'><a href="https://twitter.com/johndoe_game?lang=fr" target="_blank" rel="nofollow" className='text-dark'><FontAwesomeIcon className='iconSocial' icon={faSquareTwitter} size="xl"/></a></div>
+                <div className='d-inline-block mx-1'><a href="https://www.linkedin.com/company/johndoegame/" target="_blank" rel="nofollow" className='text-dark'><FontAwesomeIcon className='iconSocial' icon={faLinkedin} size="xl"/></a></div>
                 </div>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-3 my-md-1 m-lg-0">
@@ -59,6 +69,7 @@ function Footer({ dataPortfolio, dataBlog }) {
         <div className='container-fluid bg-dark text-light text-center py-2'>
             © Designed by John Doe
         </div>
+        <a href="#"><div id='linkToTop' className='bg-primary text-white p-2 rounded d-flex justify-content-center align-items-center'><FontAwesomeIcon icon={faArrowUp} size="2x"/></div></a>
       </div>
     );
   }

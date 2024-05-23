@@ -31,16 +31,16 @@ function MentionsLegales() {
               <Accordion.Item eventKey="1">
                 <Accordion.Header>Hébergeur</Accordion.Header>
                 <Accordion.Body>
-                  <h3>O2 Switch</h3>
-                  <p className='m-0'>222-224 Boulevard Gustave Flaubert<br></br>63000 Clermont-Ferrand – France</p>
-                  <p className='m-0 mt-3'><FontAwesomeIcon icon={faGlobe} size="sm"/> <a href="https://www.o2switch.fr/">www.o2switch.fr</a></p>
+                  <h3>Always Data</h3>
+                  <p className='m-0'>91 rue du Faubourg Saint-Honoré<br></br>75008 Paris</p>
+                  <p className='m-0 mt-3'><FontAwesomeIcon icon={faGlobe} size="sm"/> <a href="https://www.alwaysdata.com/">www.alwaysdata.com</a></p>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2">
-                <Accordion.Header>Hébergeur</Accordion.Header>
+                <Accordion.Header>Crédits</Accordion.Header>
                 <Accordion.Body>
                   <h3>Crédits</h3>
-                  <p className='m-0'>Site développé par Alexandre Dupré, étudiant du CEF.</p>
+                  <p className='m-0'>Site développé par John Doe, étudiant du CEF.</p>
                   <p className='m-0'>Les images libres de droit sont issues du site <a href="https://pixabay.com/fr/">Pixabay</a></p>
                 </Accordion.Body>
               </Accordion.Item>
