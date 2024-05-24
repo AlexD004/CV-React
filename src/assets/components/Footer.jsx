@@ -39,6 +39,7 @@ function Footer({ dataPortfolio, dataBlog }) {
                   <NavLink className="nav-link text-dark m-0 p-0" to="/blog"> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/>  Blog </NavLink>
                   <NavLink className="nav-link text-dark m-0 p-0" to="/contact"> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/>  Me contacter </NavLink>
                   <NavLink className="nav-link text-dark m-0 p-0" to="/mentions-legales"> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/>  Mentions légales </NavLink>
+                  <NavLink className="nav-link text-dark m-0 p-0" to="/github-profil"> <FontAwesomeIcon icon={faChevronRight} className='text-primary' size="xs"/>  Profil Github </NavLink>
               </Nav>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-3 my-md-1 m-lg-0">

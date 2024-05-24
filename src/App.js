@@ -12,6 +12,7 @@ import Realisations from './pages/Realisations';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import MentionsLegales from './pages/MentionsLegales';
+import GithubProfilPage from './pages/GithubProfilPage';
 import Footer from './assets/components/Footer';
 
 function App() {
@@ -132,6 +133,7 @@ function App() {
           <Route path="/blog" element={ <Blog dataBlog={ blogCards }/> }></Route>
           <Route path="/contact" element={ <Contact/> }></Route>
           <Route path="/mentions-legales" element={ <MentionsLegales/> }></Route>
+          <Route path="/github-profil" element={ <GithubProfilPage/> }></Route>
         </Routes>
       </div>
       <Footer dataPortfolio={ realisationsCards } dataBlog={ blogCards } />
