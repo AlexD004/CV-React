@@ -26,7 +26,7 @@ git@2.30.1 or higher
 
 ### 🔨 Installation
 
-From your command line, first clone Portfolio CEF :
+From your command line, first clone CV-React :
 
 ```sh
 # Clone repository
@@ -104,3 +104,21 @@ const stateWithDatas = [
 
 You can add any objects needed.
 Each objet will be deplayed as a card.
+
+### 📋 How to use GithubProfil Component
+
+You can edit the GithubProfil component if you want. Just open the file and change functions to call more (or less) informations, or update the JSX.
+   
+You can call this components in all pages you want :
+
+```
+
+# On top of your page, adjust the path if necessary !
+import GithubProfil from 'path/to/GithubProfil'
+
+# In the render (JSX)
+<GithubProfil 
+  user=" [THE.USERNAME.YOU.WANT.TO.DISPLAY.INFOS] "
+/>
+
+```
